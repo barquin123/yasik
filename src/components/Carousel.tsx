@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Children } from "react";
 
 type Images = {
     images: string[];
@@ -15,9 +15,10 @@ type Images = {
     dotRadius?:number;
     nextArrow?: React.ReactNode;
     prevArrow?: React.ReactNode;
+    children?: React.ReactNode
 }
 
-export default function Carousel({images, navButtons, width,height, autoPlay, activeDotColor, inactiveDotColor, dotHeight, dotWidth, dotRadius, dots, nextArrow, prevArrow} : Images) {
+export default function Carousel({children,images, navButtons, width,height, autoPlay, activeDotColor, inactiveDotColor, dotHeight, dotWidth, dotRadius, dots, nextArrow, prevArrow} : Images) {
   const [index, setIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -138,7 +139,7 @@ export default function Carousel({images, navButtons, width,height, autoPlay, ac
             />
         ))}
         </div> }
-      
+      {children}
     </div>
   );
 }

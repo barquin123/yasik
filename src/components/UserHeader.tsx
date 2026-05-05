@@ -5,12 +5,11 @@ import MenuItem from './MenuItem'
 
 export default function UserHeader() {
   return (
-    <div className='bg-white'>
-        <div className='wrapper max-w-[1200px] m-auto py-[15px] px-[10px] md:px-0'>
+    <div className='bg-[#111827] text-white'>
+        <div className='wrapper max-w-[1200px] m-auto px-[10px] md:px-0'>
             <div className='flex justify-between items-center'>
-                <div>
-                    {/* <Image src="https://placehold.co/150x150" width={150} height = {150} alt="logo" /> */}
-                    <img src="https://placehold.co/60x60" alt="" />
+                <div className='relative w-[220px] h-[112px]'>
+                    <Image src="/logoHeader2.png" fill sizes='220' alt="logo" className='object-cover'/>
                 </div>
                 <MenuItem/>
             </div>

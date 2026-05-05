@@ -12,8 +12,12 @@ const images = [
 
 export default function HeroSection() {
   return(
-    <div>
-      <Carousel images = {images} navButtons={false} autoPlay={true}/>
+    <div className="relative">
+      <Carousel images = {images} navButtons={false} autoPlay={true}>
+        <div className="absolute top-0 left-0">
+          test
+        </div>
+      </Carousel>
     </div>
   )
 }

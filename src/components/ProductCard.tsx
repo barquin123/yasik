@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 type Products = {
@@ -9,10 +10,10 @@ type Products = {
 
 export default function ProductCard({name, id, price, image,} : Products) {
   return (
-    <div className='container max-w-[220px] mt-[10px] rounded-[8px] overflow-hidden shadow-[0px_0px_8px_rgba(0,0,0,0.8)]'>
+    <div className='container max-w-[220px] mt-[10px] rounded-[8px] overflow-hidden shadow-[0px_0px_8px_rgba(0,0,0,0.8)] cursor-pointer'>
         <div className="wrapper">
-          <div className="image">
-            <img src={image} alt={name} />
+          <div className="image relative w-[220px] h-[294px]">
+            <Image src={image} alt={name} fill sizes="220px"/>
           </div>
           <div className='productItem p-[10px] flex justify-between items-center'>
               <h2>{name}</h2>
