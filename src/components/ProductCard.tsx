@@ -17,7 +17,7 @@ export default function ProductCard({name, id, price, image,} : Products) {
           </div>
           <div className='productItem p-[10px]'>
               <div className='flex justify-between items-center'>
-                <h2>{name}</h2>
+                <h3>{name}</h3>
                 <p className='text-[#FFC107]'>{price}</p>
               </div>
             <button className='px-[10px] py-[5px] rounded-[8px] m-auto w-fit block cursor-pointer bg-white border border-[#E52D2F] text-[#E52D2F] mt-[15px] hover:bg-[#FFC107] hover:border-white hover:text-white transition-colors duration-300'>Add to cart</button>

@@ -9,7 +9,7 @@ export default function UserHeader() {
         <div className='wrapper max-w-[1200px] m-auto px-[10px] md:px-0'>
             <div className='flex justify-between items-center'>
                 <div className='relative w-[220px] h-[112px]'>
-                    <Image src="/logoHeader2.png" fill sizes='220' alt="logo" className='object-cover'/>
+                    <Image src="/logoHeader2.png" fill sizes='220' alt="logo" className='object-cover' loading='eager'/>
                 </div>
                 <MenuItem/>
             </div>
