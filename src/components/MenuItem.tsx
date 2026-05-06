@@ -20,7 +20,7 @@ export default function MenuItem() {
             <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
 
-        <div className={`fixed z-[10] right-0 top-0 py-[15px] bg-white transition-all duration-300 h-[100vh] ${isOpen ? "w-[150px]": "w-[0]"}`}>
+        <div className={`fixed z-[10] right-0 top-0 py-[15px] bg-[#111827] transition-all duration-300 h-[100vh] ${isOpen ? "w-[150px]": "w-[0]"}`}>
             <div className='md:hidden flex justify-end'>
                 <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>

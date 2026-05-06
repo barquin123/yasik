@@ -18,7 +18,7 @@ const products = [
 export default function Products() {
   return (
     <div className='max-w-[1200px] m-auto py-[30px]'>
-      <h2 className='font-extrabold text-[24px] text-center my-[20px]'>Products</h2>
+      <h2 className='font-extrabold text-[24px] text-[#E52D2F] text-center my-[20px]'>Products</h2>
       <div className='flex flex-wrap justify-between gap-y-[25px]'>
         {products.map((item) => (
           <div key={item.id}>
@@ -26,7 +26,7 @@ export default function Products() {
           </div>
         ))}
       </div>
-      <Link className='m-auto w-fit p-[15px] block mt-[15px]' href={"/products"}>See More</Link>
+      <Link className='m-auto w-fit px-[30px] text-[22px] rounded-2xl py-[5px] block mt-[30px] bg-[#E52D2F] text-white border border-[#FFC107] hover:bg-[#FFC107] transition-colors duration-200' href={"/products"}>See More</Link>
     </div>
   )
 }
