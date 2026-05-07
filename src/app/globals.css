@@ -29,3 +29,26 @@ body {
 h1,h2{
   font-family: var(--baloo-2);
 }
+
+nav li{
+  position: relative;
+}
+
+nav li:after{
+  content: "";
+  background:#FFC107;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: 0.5s ease all;
+  height: 1px;
+}
+
+nav li:hover:after{
+  width: 100%;
+}
+
+nav li.active:after {
+  width: 100%;
+}
