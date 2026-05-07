@@ -34,10 +34,14 @@ export default function MenuItem() {
                 <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
             <nav>
-                <ul>
-                    {navigation?.items.map((menu)=>(
-                        <li key={menu.label}><Link href={menu.href}>{menu.label}</Link></li>
-                    ))}
+                <ul className='mt-[20px]'>
+                    {navigation?.items.map((menu)=>{
+                        const isActive = pathName === menu.href
+                        return (
+                            <li key={menu.label} className={`${isActive ? "active" : ""} px-[10px] py-[5px]`}><Link href={menu.href}>{menu.label}</Link></li>
+                        )
+                    }
+                    )}
                 </ul>
             </nav>    
         </div>
