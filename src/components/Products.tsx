@@ -19,7 +19,7 @@ export default function Products() {
   return (
     <div className='max-w-[1200px] m-auto py-[30px]'>
       <h2 className='font-extrabold text-[30px] text-[#E52D2F] text-center my-[20px]'>Products</h2>
-      <div className='flex flex-wrap justify-between gap-y-[25px]'>
+      <div className='flex flex-wrap justify-evenly gap-y-[25px] md:justify-between'>
         {products.map((item) => (
           <div key={item.id}>
             <ProductCard name={item.name} price={item.price.toFixed(2)} image={item.image}/>

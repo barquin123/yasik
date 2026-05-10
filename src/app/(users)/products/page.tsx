@@ -38,7 +38,7 @@ const items = [
 export default function products() {
   return (
     <div className='container max-w-[1200px] m-auto'>
-      <div className='flex flex-wrap gap-y-[25px] justify-between'>
+      <div className='flex flex-wrap gap-y-[25px] md:justify-between justify-evenly'>
         {items.map((item) => (
           <div key={item.id}>
             <ProductCard image={item.image} name={item.name} price = {item.price.toFixed(2)}/>
