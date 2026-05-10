@@ -4,9 +4,9 @@ import { useEffect, useState, useRef } from "react";
 import Carousel from "./Carousel";
 
 const images = [
-  "https://placehold.co/1920x720?text=1",
-  "https://placehold.co/1920x720?text=2",
-  "https://placehold.co/1920x720?text=3",
+  "./banner/1.jpg",
+  "./banner/2.jpg",
+  "./banner/3.jpg",
 ];
 
 
